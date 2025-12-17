@@ -1,181 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Honda Naga Motor 2 | Trusted Honda Dealer</title>
+  <title>Honda Naga Motor 2 | Premium Honda Dealer</title>
 
-  <!-- SEO -->
-  <meta name="description" content="Honda Naga Motor 2 is a trusted Honda car dealer offering the latest models, best prices, promotions, test drive, and service booking." />
+  <meta name="description" content="Honda Naga Motor 2 – Premium Honda Dealer. Discover latest Honda cars, promotions, test drive, and service booking."/>
 
-  <!-- Tailwind CDN -->
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Custom Honda Colors -->
+  <!-- Tailwind Config -->
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            hondaRed: '#E40521'
+            hondaRed: '#E40521',
+            darkBg: '#0f172a'
           }
         }
       }
     }
   </script>
+
+  <!-- Simple Animation -->
+  <style>
+    .fade-up {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+    .fade-up.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
 
-<body class="font-sans text-gray-800">
+<body class="bg-white text-gray-800 scroll-smooth">
 
 <!-- NAVBAR -->
-<header class="bg-white shadow-md sticky top-0 z-50">
+<header class="fixed w-full bg-white/90 backdrop-blur shadow z-50">
   <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-
-    <!-- LOGO -->
     <div class="flex items-center gap-3">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Honda-logo.svg"
-        alt="Honda Logo"
-        class="h-10"
-      />
-      <h1 class="text-xl font-bold text-hondaRed">Honda Naga Motor 2</h1>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Honda-logo.svg"
+           alt="Honda Logo" class="h-10"/>
+      <span class="font-bold text-xl text-hondaRed">Honda Naga Motor 2</span>
     </div>
-
     <nav class="hidden md:flex gap-6 font-medium">
       <a href="#home" class="hover:text-hondaRed">Home</a>
       <a href="#cars" class="hover:text-hondaRed">Cars</a>
-      <a href="#promo" class="hover:text-hondaRed">Promotions</a>
+      <a href="#promo" class="hover:text-hondaRed">Promo</a>
       <a href="#service" class="hover:text-hondaRed">Service</a>
-      <a href="#contact" class="hover:text-hondaRed">Contact</a>
     </nav>
-
-    <a href="https://wa.me/6281234567890" target="_blank"
-       class="bg-hondaRed text-white px-4 py-2 rounded-lg hover:bg-red-700">
-       Contact Sales
+    <a href="https://wa.me/6281234567890"
+       class="bg-hondaRed text-white px-5 py-2 rounded-full shadow hover:scale-105 transition">
+       WhatsApp
     </a>
   </div>
 </header>
 
 <!-- HERO -->
-<section id="home" class="relative text-white">
-  <div class="absolute inset-0">
-    <img
-      src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a"
-      alt="Honda Car"
-      class="w-full h-full object-cover"
-    />
-    <div class="absolute inset-0 bg-black/60"></div>
-  </div>
+<section id="home" class="h-screen relative flex items-center justify-center text-white">
+  <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a"
+       class="absolute inset-0 w-full h-full object-cover" alt="Honda Car"/>
+  <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/40"></div>
 
-  <div class="relative max-w-7xl mx-auto px-6 py-32 text-center">
-    <h2 class="text-4xl md:text-5xl font-bold mb-4">
-      Trusted Honda Car Dealer
-    </h2>
+  <div class="relative text-center max-w-3xl px-6 fade-up">
+    <h1 class="text-5xl md:text-6xl font-extrabold mb-6">
+      Premium Honda Dealer Experience
+    </h1>
     <p class="text-lg mb-8">
-      Latest Honda Models, Best Prices, Easy & Reliable Process
+      Discover the latest Honda cars with the best deals, trusted service, and easy process.
     </p>
     <div class="flex justify-center gap-4">
-      <a href="#cars" class="bg-hondaRed px-6 py-3 rounded-lg hover:bg-red-700">
-        View Cars
+      <a href="#cars" class="bg-hondaRed px-8 py-3 rounded-full font-semibold hover:scale-105 transition">
+        Explore Cars
       </a>
-      <a href="https://wa.me/6281234567890" target="_blank"
-         class="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black">
-        WhatsApp Us
+      <a href="https://wa.me/6281234567890"
+         class="border border-white px-8 py-3 rounded-full hover:bg-white hover:text-black transition">
+        Contact Sales
       </a>
     </div>
   </div>
 </section>
 
-<!-- ADVANTAGES -->
-<section class="py-16 bg-gray-100">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-6 text-center">
-    <div class="bg-white p-6 rounded-xl shadow">
-      <h3 class="font-bold mb-2">Trusted Dealer</h3>
-      <p>Professional and reliable Honda dealership</p>
+<!-- FEATURES -->
+<section class="py-20 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+    <div class="bg-white p-8 rounded-2xl shadow hover:-translate-y-2 transition fade-up">
+      <h3 class="font-bold text-lg mb-2">Authorized Dealer</h3>
+      <p>Official and trusted Honda dealership</p>
     </div>
-    <div class="bg-white p-6 rounded-xl shadow">
-      <h3 class="font-bold mb-2">Ready Stock</h3>
-      <p>Latest Honda models available</p>
+    <div class="bg-white p-8 rounded-2xl shadow hover:-translate-y-2 transition fade-up">
+      <h3 class="font-bold text-lg mb-2">Best Deals</h3>
+      <p>Competitive prices & attractive promos</p>
     </div>
-    <div class="bg-white p-6 rounded-xl shadow">
-      <h3 class="font-bold mb-2">Best Price</h3>
-      <p>Competitive and transparent pricing</p>
+    <div class="bg-white p-8 rounded-2xl shadow hover:-translate-y-2 transition fade-up">
+      <h3 class="font-bold text-lg mb-2">Easy Process</h3>
+      <p>Fast credit & cash purchase</p>
     </div>
-    <div class="bg-white p-6 rounded-xl shadow">
-      <h3 class="font-bold mb-2">After Sales</h3>
+    <div class="bg-white p-8 rounded-2xl shadow hover:-translate-y-2 transition fade-up">
+      <h3 class="font-bold text-lg mb-2">After Sales</h3>
       <p>Service & maintenance support</p>
     </div>
   </div>
 </section>
 
 <!-- CARS -->
-<section id="cars" class="py-16">
+<section id="cars" class="py-20">
   <div class="max-w-7xl mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center mb-10">Honda Car Models</h2>
+    <h2 class="text-4xl font-bold text-center mb-14 fade-up">Honda Models</h2>
 
-    <div class="grid md:grid-cols-3 gap-8">
-
-      <div class="border rounded-xl overflow-hidden shadow hover:shadow-lg transition">
-        <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2" alt="Honda Brio">
-        <div class="p-4">
-          <h3 class="font-bold text-xl">Honda Brio</h3>
-          <p class="text-gray-600 mb-4">Starting from IDR xxx.xxx.xxx</p>
-          <a href="https://wa.me/6281234567890" target="_blank"
-             class="bg-hondaRed text-white px-4 py-2 rounded">
+    <div class="grid md:grid-cols-3 gap-10">
+      <!-- Card -->
+      <div class="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition fade-up">
+        <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2"
+             class="h-60 w-full object-cover hover:scale-110 transition duration-500"/>
+        <div class="p-6">
+          <h3 class="text-xl font-bold">Honda Brio</h3>
+          <p class="text-gray-500 mb-4">Starting from IDR xxx.xxx.xxx</p>
+          <a href="https://wa.me/6281234567890"
+             class="inline-block bg-hondaRed text-white px-6 py-2 rounded-full hover:scale-105 transition">
              Order Now
           </a>
         </div>
       </div>
 
-      <div class="border rounded-xl overflow-hidden shadow hover:shadow-lg transition">
-        <img src="https://images.unsplash.com/photo-1617814076231-6dff88c43f4e" alt="Honda HR-V">
-        <div class="p-4">
-          <h3 class="font-bold text-xl">Honda HR-V</h3>
-          <p class="text-gray-600 mb-4">Starting from IDR xxx.xxx.xxx</p>
-          <a href="https://wa.me/6281234567890" target="_blank"
-             class="bg-hondaRed text-white px-4 py-2 rounded">
+      <div class="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition fade-up">
+        <img src="https://images.unsplash.com/photo-1617814076231-6dff88c43f4e"
+             class="h-60 w-full object-cover hover:scale-110 transition duration-500"/>
+        <div class="p-6">
+          <h3 class="text-xl font-bold">Honda HR-V</h3>
+          <p class="text-gray-500 mb-4">Starting from IDR xxx.xxx.xxx</p>
+          <a href="https://wa.me/6281234567890"
+             class="inline-block bg-hondaRed text-white px-6 py-2 rounded-full">
              Order Now
           </a>
         </div>
       </div>
 
-      <div class="border rounded-xl overflow-hidden shadow hover:shadow-lg transition">
-        <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04" alt="Honda CR-V">
-        <div class="p-4">
-          <h3 class="font-bold text-xl">Honda CR-V</h3>
-          <p class="text-gray-600 mb-4">Starting from IDR xxx.xxx.xxx</p>
-          <a href="https://wa.me/6281234567890" target="_blank"
-             class="bg-hondaRed text-white px-4 py-2 rounded">
+      <div class="rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition fade-up">
+        <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04"
+             class="h-60 w-full object-cover hover:scale-110 transition duration-500"/>
+        <div class="p-6">
+          <h3 class="text-xl font-bold">Honda CR-V</h3>
+          <p class="text-gray-500 mb-4">Starting from IDR xxx.xxx.xxx</p>
+          <a href="https://wa.me/6281234567890"
+             class="inline-block bg-hondaRed text-white px-6 py-2 rounded-full">
              Order Now
           </a>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
 <!-- PROMO -->
-<section id="promo" class="bg-hondaRed text-white py-16 text-center">
-  <h2 class="text-3xl font-bold mb-4">Special Honda Promotions</h2>
-  <p>Cashback • Low DP • Light Installments • Limited Time Offer</p>
+<section id="promo" class="py-20 bg-gradient-to-r from-hondaRed to-red-700 text-white text-center">
+  <h2 class="text-4xl font-bold mb-4 fade-up">Special Honda Promotions</h2>
+  <p class="fade-up">Cashback • Low DP • Light Installments • Limited Offer</p>
 </section>
 
 <!-- SERVICE -->
-<section id="service" class="py-16 bg-gray-100">
-  <div class="max-w-xl mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center mb-6">Service Booking</h2>
-    <form class="bg-white p-6 rounded-xl shadow space-y-4">
-      <input type="text" placeholder="Full Name" class="w-full border p-3 rounded">
-      <input type="text" placeholder="WhatsApp Number" class="w-full border p-3 rounded">
-      <select class="w-full border p-3 rounded">
-        <option>Select Car Model</option>
-        <option>Brio</option>
-        <option>HR-V</option>
-        <option>CR-V</option>
-      </select>
-      <input type="date" class="w-full border p-3 rounded">
-      <button class="w-full bg-hondaRed text-white py-3 rounded hover:bg-red-700">
+<section id="service" class="py-20 bg-gray-100">
+  <div class="max-w-xl mx-auto px-6 fade-up">
+    <h2 class="text-3xl font-bold text-center mb-8">Service Booking</h2>
+    <form class="bg-white p-8 rounded-2xl shadow space-y-4">
+      <input class="w-full border p-3 rounded" placeholder="Full Name"/>
+      <input class="w-full border p-3 rounded" placeholder="WhatsApp Number"/>
+      <input type="date" class="w-full border p-3 rounded"/>
+      <button class="w-full bg-hondaRed text-white py-3 rounded-full hover:scale-105 transition">
         Book Service
       </button>
     </form>
@@ -183,16 +179,24 @@
 </section>
 
 <!-- FOOTER -->
-<footer id="contact" class="bg-gray-900 text-white py-10">
-  <div class="max-w-7xl mx-auto px-6 text-center">
-    <h3 class="text-xl font-bold mb-2">Honda Naga Motor 2</h3>
-    <p>Official Honda Car Dealer</p>
-    <p class="mt-2">WhatsApp: 0812-3456-7890</p>
-    <p class="text-sm text-gray-400 mt-4">
-      © 2025 Honda Naga Motor 2. All rights reserved.
-    </p>
-  </div>
+<footer class="bg-darkBg text-white py-10 text-center">
+  <h3 class="font-bold text-xl">Honda Naga Motor 2</h3>
+  <p class="text-gray-400">Premium Honda Dealer</p>
+  <p class="mt-2">WhatsApp: 0812-3456-7890</p>
+  <p class="text-sm text-gray-500 mt-4">© 2025 Honda Naga Motor 2</p>
 </footer>
+
+<!-- SCROLL ANIMATION SCRIPT -->
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
